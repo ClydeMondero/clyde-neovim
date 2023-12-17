@@ -77,4 +77,8 @@ end
 
 -- git keymaps
 vim.keymap.set('n', '<leader>gg', ':Git<CR>', { desc = '[G]it' })
+vim.keymap.set('n', '<leader>ga', ':Git add .<CR>', { desc = '[A]add' })
+vim.keymap.set('n', '<leader>gc', ':Git commit<CR>', { desc = '[C]ommit' })
+vim.keymap.set('n', '<leader>gps', ':Git push<CR>', { desc = '[P]u[S]h' })
+vim.keymap.set('n', '<leader>gpl', ':Git pull<CR>', { desc = '[P]u[L]l' })
 vim.keymap.set('n', '<leader>gs', ':Git status<CR>', { desc = '[S]tatus' })
