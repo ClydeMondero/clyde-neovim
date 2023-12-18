@@ -123,6 +123,13 @@ require('lazy').setup({
   -- Autotags
   "windwp/nvim-ts-autotag",
 
+  -- Autopairs
+  {
+    'windwp/nvim-autopairs',
+    event = "InsertEnter",
+    opts = {}
+  },
+
   -- Debugger
   require 'kickstart.plugins.debug',
 
