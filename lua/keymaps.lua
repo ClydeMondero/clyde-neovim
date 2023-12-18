@@ -3,6 +3,8 @@
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
+vim.keymap.set('n', '<leader>fb', ':Neotree position=float toggle <CR>', { desc = '[B]rowser' })
+
 -- Set :w to <space>w
 vim.keymap.set('n', '<leader>w', vim.cmd.w, { desc = '[W]rite' })
 

@@ -45,6 +45,8 @@ require 'cmp-setup'
 -- (colorscheme)
 require 'catpuccin-setup'
 
+require 'neotree-setup'
+
 -- [[ Configure lualine]]
 -- (status line)
 require 'lualine-setup'
