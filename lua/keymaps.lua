@@ -3,9 +3,6 @@
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
--- Set :Ex to <space>pv
-vim.keymap.set('n', '<leader>lf', vim.cmd.Ex, { desc = '[F]iles' })
-
 -- Set :w to <space>w
 vim.keymap.set('n', '<leader>w', vim.cmd.w, { desc = '[W]rite' })
 
@@ -23,9 +20,6 @@ vim.keymap.set('n', "<C-u>", "<C-u>zz")
 -- Center Search Term
 vim.keymap.set('n', "n", "nzzzv")
 vim.keymap.set('n', "N", "Nzzzv")
-
--- Format
-vim.keymap.set("n", "<leader>f", vim.lsp.buf.format, { desc = '[F]ormat' })
 
 -- Quickfix Navigation
 vim.keymap.set("n", "<C-k>", "<cmd>cnext<CR>zz")

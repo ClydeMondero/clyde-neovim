@@ -1,4 +1,4 @@
--- Change language to English
+--Change language to English
 vim.api.nvim_exec('language en_US', true)
 
 -- [[ Install `lazy.nvim` plugin manager ]]
@@ -48,5 +48,6 @@ require 'catpuccin-setup'
 -- [[ Configure lualine]]
 -- (status line)
 require 'lualine-setup'
+
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
