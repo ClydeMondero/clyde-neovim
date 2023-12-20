@@ -3,6 +3,11 @@ require('neo-tree').setup({
   window = {
     position = "float"
   },
+  filesystem = {
+    filtered_items = {
+      visible = true,
+    },
+  },
   init = function()
     vim.api.nvim_create_autocmd('BufEnter', {
       -- make a group to be able to delete it later
@@ -20,7 +25,7 @@ require('neo-tree').setup({
   end,
   opts = {
     filesystem = {
-      hijack_netrw_behavior = 'open_current'
+      hijack_netrw_behavior = 'open_current',
     }
   }
 })
