@@ -1,5 +1,3 @@
--- [[ Basic Keymaps ]]
--- Set <space> as leader
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
@@ -11,6 +9,11 @@ vim.keymap.set('n', '<leader>w', vim.cmd.w, { desc = '[W]rite' })
 -- Move as Highlighted
 vim.keymap.set('v', 'J', ":m '>+1<CR>gv=gv")
 vim.keymap.set('v', 'K', ":m '<-2<CR>gv=gv")
+
+-- Clipboard
+vim.keymap.set('n', '<leader>y', "\"+y")
+vim.keymap.set('v', '<leader>y', "\"+y")
+vim.keymap.set('n', '<leader>Y', "\"+Y")
 
 -- J Behavior
 vim.keymap.set('n', "J", "mzJ`z")
@@ -50,6 +53,7 @@ vim.keymap.set('n', ']d', vim.diagnostic.goto_next, { desc = 'Go to next diagnos
 -- vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostics list' })
 
 -- [[ Highlight on yank ]]
+--
 -- See `:help vim.highlight.on_yank()`
 local highlight_group = vim.api.nvim_create_augroup('YankHighlight', { clear = true })
 vim.api.nvim_create_autocmd('TextYankPost', {

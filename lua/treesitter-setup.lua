@@ -20,6 +20,9 @@ vim.defer_fn(function()
       enable_rename = true,
       enable_close = true,
     },
+    tree_setter = {
+      enable = true
+    },
     -- incremental_selection = {
     --   enable = true,
     --   keymaps = {

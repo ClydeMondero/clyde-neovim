@@ -122,6 +122,9 @@ require('lazy').setup({
     build = ':TSUpdate',
   },
 
+  -- Auto semi colon and equals sign
+  'filNaj/tree-setter',
+
   -- Harpoon (Navigation)
   'nvim-lua/plenary.nvim',
   'ThePrimeagen/harpoon',
