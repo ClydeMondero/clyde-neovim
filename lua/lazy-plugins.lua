@@ -59,12 +59,14 @@ require('lazy').setup({
   -- Useful plugin to show you pending keybinds.
   { 'folke/which-key.nvim',  opts = {} },
 
+  -- Theme
   {
     "catppuccin/nvim",
     name = "catppuccin",
     priority = 1000
   },
 
+  -- File Browser
   {
     "nvim-neo-tree/neo-tree.nvim",
     branch = "v3.x",
@@ -125,6 +127,17 @@ require('lazy').setup({
   -- Auto semi colon and equals sign
   'filNaj/tree-setter',
 
+  -- Surround
+  {
+    "kylechui/nvim-surround",
+    version = "*",
+    event = "VeryLazy",
+    config = function()
+      require("nvim-surround").setup({
+      })
+    end
+  },
+
   -- Harpoon (Navigation)
   'nvim-lua/plenary.nvim',
   'ThePrimeagen/harpoon',
@@ -133,7 +146,7 @@ require('lazy').setup({
   'mbbill/undotree',
 
   -- Autoformatting
-  require 'kickstart.plugins.autoformat',
+  require 'plugins.autoformat',
 
   -- Autotags
   "windwp/nvim-ts-autotag",
@@ -146,7 +159,7 @@ require('lazy').setup({
   },
 
   -- Debugger
-  require 'kickstart.plugins.debug',
+  require 'plugins.debug',
 
   -- Terminal
   {

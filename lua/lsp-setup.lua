@@ -37,7 +37,6 @@ require('mason-lspconfig').setup()
 
 -- Enable the following language servers
 local servers = {
-  -- tsserver = {},
   emmet_ls = {
     filetypes = { "css", "eruby", "html", "javascript", "javascriptreact", "less", "sass", "scss", "svelte", "pug", "typescriptreact", "vue" },
     init_options = {

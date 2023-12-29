@@ -1,18 +1,10 @@
 -- autoformat.lua
---
 -- Use your language server to automatically format your code on save.
--- Adds additional commands as well to manage the behavior
 
 return {
   'neovim/nvim-lspconfig',
   config = function()
-    -- Switch for controlling whether you want autoformatting.
-    --  Use :KickstartFormatToggle to toggle autoformatting on or off
     local format_is_enabled = true
-    vim.api.nvim_create_user_command('KickstartFormatToggle', function()
-      format_is_enabled = not format_is_enabled
-      print('Setting autoformatting to: ' .. tostring(format_is_enabled))
-    end, {})
 
     -- Create an augroup that is used for managing our formatting autocmds.
     --      We need one augroup per client to make sure that multiple clients
@@ -20,7 +12,7 @@ return {
     local _augroups = {}
     local get_augroup = function(client)
       if not _augroups[client.id] then
-        local group_name = 'kickstart-lsp-format-' .. client.name
+        local group_name = 'lsp-format' .. client.name
         local id = vim.api.nvim_create_augroup(group_name, { clear = true })
         _augroups[client.id] = id
       end
