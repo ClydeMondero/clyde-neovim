@@ -41,10 +41,16 @@ require 'lsp-setup'
 -- (completion)
 require 'cmp-setup'
 
+-- [[ Configure Ufo ]]
+-- (fold)
+require 'ufo-setup'
+
 -- [[ Configure catpuccin]]
 -- (colorscheme)
 require 'catpuccin-setup'
 
+-- [[ Configure neotree ]]
+-- (filebrowser)
 require 'neotree-setup'
 
 -- [[ Configure lualine]]

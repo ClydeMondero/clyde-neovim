@@ -76,7 +76,7 @@ function _G.set_terminal_keymaps()
 end
 
 -- git keymaps
-vim.keymap.set('n', '<leader>gg', ':vertical Git<CR>', { desc = '[G]it' })
+vim.keymap.set('n', '<leader>gm', ':vertical Git<CR>', { desc = '[M]enu' })
 vim.keymap.set('n', '<leader>gd', ':Gvdiff <CR>', { desc = '[D]iff' })
 vim.keymap.set('n', '<leader>ga', ':Git add .<CR>', { desc = '[A]add' })
 vim.keymap.set('n', '<leader>gc', ':Git commit<CR>', { desc = '[C]ommit' })

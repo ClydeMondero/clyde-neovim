@@ -121,7 +121,7 @@ require('lazy').setup({
     dependencies = {
       'nvim-treesitter/nvim-treesitter-textobjects',
     },
-    build = ':TSUpdate',
+    run = ':TSUpdate',
   },
 
   -- Auto semi colon and equals sign
@@ -147,6 +147,17 @@ require('lazy').setup({
 
   -- Autoformatting
   require 'plugins.autoformat',
+
+  -- Folds
+  {
+    'kevinhwang91/nvim-ufo',
+    dependencies = { 'kevinhwang91/promise-async' },
+    opts = {
+      provider_selector = function(bufnr, filetype, buftype)
+        return { 'treesitter', 'indent' }
+      end,
+    },
+  },
 
   -- Autotags
   "windwp/nvim-ts-autotag",
