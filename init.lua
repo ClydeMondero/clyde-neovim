@@ -21,9 +21,13 @@ require 'telescope-setup'
 -- (syntax parser for highlighting)
 require 'treesitter-setup'
 
+-- [[Configure barbar]]
+-- (tab management)
+--[[ require 'barbar-setup' ]]
+
 -- [[ Configure Harpoon ]]
 -- (blazing fast navigation)
-require 'harpoon-setup'
+--[[ require 'harpoon-setup' ]]
 
 -- [[ Configure Undo Tree ]]
 -- (visualize undo)

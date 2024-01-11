@@ -11,6 +11,12 @@ vim.o.hlsearch = false
 -- Make line numbers default
 vim.o.number = true
 
+-- Relative Line Number
+--[[ vim.opt.relativenumber = true ]]
+
+-- Line wrap
+vim.o.wrap = false
+
 -- Enable mouse mode
 vim.o.mouse = 'a'
 
@@ -36,9 +42,6 @@ vim.o.completeopt = 'menuone,noselect'
 
 -- NOTE: You should make sure your terminal supports this
 vim.o.termguicolors = true
-
--- Relative Line Number
-vim.opt.relativenumber = true
 
 vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
