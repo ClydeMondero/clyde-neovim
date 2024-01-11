@@ -4,7 +4,7 @@ vim.g.maplocalleader = ' '
 -- File Browser
 vim.keymap.set('n', '<leader>fb', ':Neotree position=float toggle <CR>', { desc = '[B]rowser' })
 
-vim.keymap.set('n', '<leader>l', ":set relativenumber! number <CR>")
+vim.keymap.set('n', '<leader>tl', ":set relativenumber! number <CR>", { desc = '[L]ine Number' })
 
 -- Set :w to <space>w
 vim.keymap.set('n', '<leader>w', vim.cmd.w, { desc = '[W]rite' })

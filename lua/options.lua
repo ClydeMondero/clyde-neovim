@@ -12,7 +12,7 @@ vim.o.hlsearch = false
 vim.o.number = true
 
 -- Relative Line Number
---[[ vim.opt.relativenumber = true ]]
+vim.opt.relativenumber = true
 
 -- Line wrap
 vim.o.wrap = false
