@@ -15,7 +15,7 @@ vim.o.number = true
 vim.opt.relativenumber = true
 
 -- Line wrap
-vim.o.wrap = false
+vim.o.wrap = true
 
 -- Enable mouse mode
 vim.o.mouse = 'a'

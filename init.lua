@@ -23,7 +23,7 @@ require 'treesitter-setup'
 
 -- [[Configure barbar]]
 -- (tab management)
---[[ require 'barbar-setup' ]]
+require 'barbar-setup'
 
 -- [[ Configure Harpoon ]]
 -- (blazing fast navigation)

@@ -139,22 +139,21 @@ require('lazy').setup({
   },
 
   -- Tabs
-  -- {
-  --   'romgrk/barbar.nvim',
-  --   dependencies = {
-  --     'lewis6991/gitsigns.nvim',
-  --     'nvim-tree/nvim-web-devicons',
-  --   },
-  --   init = function() vim.g.barbar_auto_setup = false end,
-  --   opts = {
-  --   },
-  --   version = '^1.0.0',
-  -- },
+  {
+    'romgrk/barbar.nvim',
+    dependencies = {
+      'lewis6991/gitsigns.nvim',
+      'nvim-tree/nvim-web-devicons',
+    },
+    init = function() vim.g.barbar_auto_setup = false end,
+    opts = {
+    },
+    version = '^1.0.0',
+  },
 
-  -- Harpoon (Navigation)
+  -- -- Harpoon (Navigation)
   -- {
   --   "ThePrimeagen/harpoon",
-  --   branch = "harpoon2",
   --   dependencies = { "nvim-lua/plenary.nvim" }
   -- },
 
