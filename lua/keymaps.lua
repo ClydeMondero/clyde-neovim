@@ -4,6 +4,7 @@ vim.g.maplocalleader = ' '
 -- File Browser
 vim.keymap.set('n', '<leader>fb', ':Neotree position=float toggle <CR>', { desc = '[B]rowser' })
 
+-- Toggle Line Number to Absolute or Relative
 vim.keymap.set('n', '<leader>l', ":set relativenumber! number <CR>", { desc = '[L]ine Number' })
 
 -- Set :w to <space>w
@@ -79,10 +80,10 @@ function _G.set_terminal_keymaps()
 end
 
 -- git keymaps
-vim.keymap.set('n', '<leader>gm', ':vertical Git<CR>', { desc = '[M]enu' })
+vim.keymap.set('n', '<leader>gm', ':tab Git<CR>', { desc = '[M]enu' })
 vim.keymap.set('n', '<leader>gd', ':Gvdiff <CR>', { desc = '[D]iff' })
 vim.keymap.set('n', '<leader>ga', ':Git add .<CR>', { desc = '[A]add' })
-vim.keymap.set('n', '<leader>gc', ':Git commit<CR>', { desc = '[C]ommit' })
+vim.keymap.set('n', '<leader>gc', ':tab Git commit<CR>', { desc = '[C]ommit' })
 vim.keymap.set('n', '<leader>gps', ':Git push<CR>', { desc = '[P]u[S]h' })
 vim.keymap.set('n', '<leader>gpl', ':Git pull<CR>', { desc = '[P]u[L]l' })
 vim.keymap.set('n', '<leader>gs', ':Git status<CR>', { desc = '[S]tatus' })

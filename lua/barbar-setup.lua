@@ -1,3 +1,7 @@
+require 'barbar'.setup {
+  no_name_title = 'Untitled Buffer',
+}
+
 local map = vim.api.nvim_set_keymap
 local opts = { noremap = true, silent = true }
 
