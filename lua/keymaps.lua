@@ -7,8 +7,9 @@ vim.keymap.set('n', '<leader>fb', ':Neotree position=float toggle <CR>', { desc 
 -- Toggle Line Number to Absolute or Relative
 vim.keymap.set('n', '<leader>l', ":set relativenumber! number <CR>", { desc = '[L]ine Number' })
 
--- Set :w to <space>w
-vim.keymap.set('n', '<leader>w', vim.cmd.w, { desc = '[W]rite' })
+-- Set Save to Control + S
+vim.keymap.set('n', '<c-s>', ":update <cr>")
+vim.keymap.set('i', '<c-s>', "<esc> :update <cr>")
 
 -- Move as Highlighted
 vim.keymap.set('v', 'J', ":m '>+1<CR>gv=gv")
