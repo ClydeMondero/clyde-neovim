@@ -1,6 +1,8 @@
 --Change language to English
 vim.api.nvim_exec('language en_US', true)
 
+require 'autocmd'
+
 -- [[ Install `lazy.nvim` plugin manager ]]
 require 'lazy-bootstrap'
 
