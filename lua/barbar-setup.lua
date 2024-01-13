@@ -20,4 +20,4 @@ map('n', '<leader>3', '<Cmd>BufferGoto 3<CR>', opts)
 map('n', '<leader>4', '<Cmd>BufferGoto 4<CR>', opts)
 
 -- Close buffer
-map('n', '<leader>`', '<Cmd>BufferClose<CR>', opts)
+map('n', '<leader>`', ':bd<CR>', opts)
