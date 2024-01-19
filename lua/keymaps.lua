@@ -2,7 +2,7 @@ vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
 -- File Browser
-vim.keymap.set('n', '<leader>fb', ':Neotree position=float toggle <CR>', { desc = '[B]rowser' })
+vim.keymap.set('n', '<leader>fb', ':Neotree position=left toggle <CR>', { desc = '[B]rowser' })
 
 -- Toggle Line Number to Absolute or Relative
 vim.keymap.set('n', '<leader>l', ":set relativenumber! number <CR>", { desc = '[L]ine Number' })
