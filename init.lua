@@ -59,6 +59,10 @@ require 'catpuccin-setup'
 -- (filebrowser)
 require 'neotree-setup'
 
+-- [[ Configure markdownpreview ]]
+-- (markdown preview)
+require 'markdownpreview-setup'
+
 -- [[ Configure lualine]]
 -- (status line)
 require 'lualine-setup'
