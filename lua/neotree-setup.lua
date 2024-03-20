@@ -1,7 +1,8 @@
 require('neo-tree').setup({
   cmd = 'Neotree',
   window = {
-    position = "float"
+    position = "left",
+    width = 40
   },
   filesystem = {
     filtered_items = {
