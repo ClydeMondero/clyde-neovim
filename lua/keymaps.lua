@@ -2,23 +2,28 @@ vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
 -- File Browser
-vim.keymap.set('n', '<leader>fb', ':Neotree position=left toggle <CR>', { desc = '[B]rowser' })
+vim.keymap.set('n', '<leader>fe', ':Neotree position=left toggle <CR>', { desc = '[E]xplorer' })
 
 -- Toggle Line Number to Absolute or Relative
 vim.keymap.set('n', '<leader>l', ":set relativenumber! number <CR>", { desc = '[L]ine Number' })
 
 -- Set Save to Control + S
 vim.keymap.set('n', '<c-s>', ":write <cr>")
-vim.keymap.set('i', '<c-s>', "<esc> :update <cr>")
+vim.keymap.set('i', '<c-s>', "<esc> :write <cr>")
 
 -- Move as Highlighted
 vim.keymap.set('v', 'J', ":m '>+1<CR>gv=gv")
 vim.keymap.set('v', 'K', ":m '<-2<CR>gv=gv")
 
 -- Clipboard
-vim.keymap.set('n', '<leader>y', "\"+y")
-vim.keymap.set('v', '<leader>y', "\"+y")
-vim.keymap.set('n', '<leader>Y', "\"+Y")
+-- vim.keymap.set('n', '<leader>y', "\"+y")
+-- vim.keymap.set('v', '<leader>y', "\"+y")
+-- vim.keymap.set('n', '<leader>Y', "\"+Y")
+-- vim.keymap.set('n', '<leader>Y', "\"+Y")
+vim.keymap.set('n', '<c-c>', "\"+Y")
+vim.keymap.set('v', '<c-c>', "\"+Y")
+vim.keymap.set('n', '<c-v>', "\"+P")
+vim.keymap.set('i', '<c-v>', "\"+P")
 
 -- J Behavior
 vim.keymap.set('n', "J", "mzJ`z")
@@ -54,8 +59,8 @@ vim.keymap.set('n', 'j', "v:count == 0 ? 'gj' : 'j'", { expr = true, silent = tr
 -- Diagnostic keymaps
 vim.keymap.set('n', '[d', vim.diagnostic.goto_prev, { desc = 'Go to previous diagnostic message' })
 vim.keymap.set('n', ']d', vim.diagnostic.goto_next, { desc = 'Go to next diagnostic message' })
--- vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float, { desc = 'Open floating diagnostic message' })
--- vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostics list' })
+vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float, { desc = 'Open floating diagnostic message' })
+vim.keymap.set('n', '<leader>el', vim.diagnostic.setloclist, { desc = 'Open diagnostics list' })
 
 -- [[ Highlight on yank ]]
 -- See `:help vim.highlight.on_yank()`
