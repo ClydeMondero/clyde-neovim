@@ -1,7 +1,7 @@
 require('neo-tree').setup({
   cmd = 'Neotree',
   window = {
-    position = "left",
+    position = "right",
     width = 40
   },
   filesystem = {
